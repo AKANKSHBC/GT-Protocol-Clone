@@ -98,7 +98,7 @@ margin: 0;
   padding: 10px 20px;
   background-color:transparent;
   opacity: 0.8;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); 
   justify-content:space-between;
   border-radius: 5px;
   border-color: rgb(208, 208, 212);
@@ -120,19 +120,96 @@ margin: 0;
    color: white;
    font-size: 24px; 
    border-color:white; 
+
 }
+
+.trust{
+  width: 190px;
+  z-index: 10000;
+ 
+ 
+}
+.trust p{
+  width: 190px;
+  z-index: 10000;
+ 
+} 
 
 .marquee {
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 10s linear infinite; /* Adjust duration as needed */
+  animation: marquee 12s linear infinite; /* Adjust duration as needed */
+  left: 100px;
+  padding-left: 500px;
+  position: relative;
+  margin-top: -10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .marquee img {
-  margin-right: 20px; /* Adjust the spacing between images */
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px; /* Adjust the spacing between images */
+  z-index: 1;
 }
 
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+
+}
+
+.box-marque{
+  justify-content: center;
+  overflow: hidden;
+  width:100%;
+  align-items: center;
+  z-index: 10000;
+  
+}
+.nav-baar{
+  display: flex;
+  position: relative;
+  margin-right: 30px;
+  margin-top: 20pz;
+  justify-content: flex-end;
+  z-index: 10000;
+}
+
+.navbar {
+    justify-content: center;
+    margin-right: 30px;
+    background-color: #333;
+    width: 65px;
+    position: relative;
+    top: -990px;
+    /* margin-top: 0; */
+    /* margin-left: 0; */
+    border-radius: 12px;
+}
+
+ 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+
+a:hover {
+  background-color: #555;
 }
