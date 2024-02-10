@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Marques = () => {
+const Marquee2 = () => {
   return (
-    <div className="marquee" direction="right">
+    <div className="marquee-2" direction="right">
           <marque direction="left" behavior="scroll">
-            <img src="https://assets-global.website-files.com/6571cd8955f9e7f772615980/65afe1eb20ff64f95c929afc_Animoca.svg"  alt="AI Icon" height={50} />
+           <img src="https://assets-global.website-files.com/6571cd8955f9e7f772615980/65afe1eb20ff64f95c929afc_Animoca.svg"  alt="AI Icon" height={50} />
            <img src="https://assets-global.website-files.com/6571cd8955f9e7f772615980/6571cd8955f9e7f7726159af_coin-market.svg" alt="AI Icon" height={50} />
            <img src="https://assets-global.website-files.com/6571cd8955f9e7f772615980/6571cd8955f9e7f7726159ee_defimoon.svg"alt="AI Icon" height={50} />
             {/* <img src="https://assets-global.website-files.com/6571cd8955f9e7f772615980/6571 d8955f9e7f772615a6f_dao-maker-2.svg" alt="Img 2"height={50} /> */}
@@ -23,4 +23,4 @@ const Marques = () => {
   )
 }
 
-export default Marques
+export default Marquee2

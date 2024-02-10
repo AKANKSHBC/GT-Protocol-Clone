@@ -17,6 +17,7 @@ margin: 0;
 }
 
 .content{
+  
    position: absolute;
    height: 100%;
    width: 100%;
@@ -28,7 +29,7 @@ margin: 0;
    right: 0;
    color: white;
    font-size: 24px; 
-  font-family: 'Roboto Mono', monospace;
+   
 }
 
 .content img {
@@ -36,6 +37,7 @@ margin: 0;
   margin-bottom: 10px;
 }
 .content p{
+  font-family: var(--font-basic);
     color: rgb(255, 255, 255);
     position: absolute;
     padding-top: 300px;
@@ -84,8 +86,9 @@ margin: 0;
   opacity: 0.8;
   color: rgb(255, 255, 255);
   justify-content:space-between;
-  border-radius: 5px;
-  border-color: rgb(34, 118, 245);
+  /* border-radius: 5px; */
+  border: 2px solid  rgb(34, 118, 245);
+  /* border-color: rgb(34, 118, 245); */
   cursor: pointer;
   box-shadow: none;
   height: 50px;
@@ -101,7 +104,7 @@ margin: 0;
   color: rgb(255, 255, 255); 
   justify-content:space-between;
   border-radius: 5px;
-  border-color: rgb(208, 208, 212);
+  border: 2px solid rgb(208, 208, 212);
   cursor: pointer;
   box-shadow: none;
   height: 50px;
@@ -110,11 +113,13 @@ margin: 0;
   border-width:3px ;
 }
 
+
 .container{
+  
   position: absolute;
   display: flex;
   align-items: center;
-   left: 40px;
+   left: 0;
    bottom: 0; 
    right: 0;
    color: white;
@@ -124,21 +129,23 @@ margin: 0;
 }
 
 .trust{
+  
   width: 190px;
   z-index: 10000;
- 
+  margin-left: 40px;
  
 }
 .trust p{
+  
   width: 190px;
   z-index: 10000;
- 
 } 
 
 .marquee {
+
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 12s linear infinite; /* Adjust duration as needed */
+  animation: marquee 35s linear infinite; /* Adjust duration as needed */
   left: 100px;
   padding-left: 500px;
   position: relative;
@@ -146,9 +153,12 @@ margin: 0;
   width: 100%;
   align-items: center;
   justify-content: center;
+  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
 }
 
+
 .marquee img {
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
   margin-right: 50px; /* Adjust the spacing between images */
@@ -166,9 +176,23 @@ margin: 0;
   overflow: hidden;
   width:100%;
   align-items: center;
-  z-index: 10000;
-  
+  z-index: 10000; 
 }
+
+.marquee-container {
+  width: 100%;
+  display: flex;
+  border: 2px solid rgb(88, 82, 82); /* Adjust the border width and color as needed */
+  height: 110px;
+  position: relative;
+  justify-content: center; /* Corrected property name */
+  top: 50px;
+  justify-content: center; /* Corrected property name */
+  align-items: center; /* Align content vertically center */
+  z-index: 10003;
+}
+
+
 .nav-baar{
   display: flex;
   position: relative;
@@ -212,4 +236,246 @@ a {
 
 a:hover {
   background-color: #555;
+}
+
+.img-contaier{
+   margin-top: 0;
+   display: flex;
+   position: relative;
+   top:-735px;
+}
+.img-contaier img{
+width: 100%;
+
+}
+
+.mobile-contaier{
+  display: flex;
+  /* background-color: aqua; */
+  position: absolute;
+  top:900px;
+  right:100px;
+  height: 900px;
+ 
+}
+
+.image-button{
+  position: absolute;
+  display: flex;
+  top:1550px;
+  left:50px;
+  gap: 20px;
+ 
+}
+
+.ai-shopping{
+  display: flex;
+  position:absolute;
+  width:100%;
+  height: 510px;
+  top:900px;
+  /* background-color: aqua; */
+  margin-left: 50px;
+}
+.ai-shopping h1{
+   color: white;
+   font-size: 44px;
+   margin-left: 70px;
+   font-family:'Poppins';
+}
+.ai-shopping h2{
+  margin-left: -70px;
+  font-family:'Poppins';
+}
+.button3{
+  position :relative;
+  display: flex;
+  padding: 10px 20px;
+  top: 180px;
+  background-color:transparent;
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  justify-content:space-between;
+  /* border-radius: 5px; */
+  border: 2px solid  rgb(34, 118, 245);
+  /* border-color: rgb(34, 118, 245); */
+  cursor: pointer;
+  box-shadow: none;
+  height: 50px;
+  width:150px;
+  font-size: 19px; 
+  border-width:3px ;
+  left: -290px;
+}
+.ai-shopping img{
+  display: flex;
+  position: relative;
+  top: 50px;
+  right:-510px;
+}
+.ai-shopping p{
+  display: flex;
+  position: absolute;
+  color:white;
+  font-size: 25px;
+  top:260px
+}
+.marquee-2-contaier{
+  position:absolute;
+  width:100%;
+  top: 1860px;
+  border: 2px solid rgb(88, 82, 82); /* Adjust the border width and color as needed */
+  height: 110px;
+  justify-content: center; /* Corrected property name */
+  /* Corrected property name */
+  align-items: center; /* Align content vertically center */
+}
+
+.kyc2{
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  
+ 
+}
+.kyc2 p{
+  height: 60px;
+  margin-left: 40px;
+  margin-top: 25px;
+  position:absolute;
+  color:white ;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.marquee-2{
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 5s linear infinite; /* Adjust duration as needed */
+  left: 100px;
+  padding-left: 500px;
+  position: relative;
+  margin-top: -30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  animation-iteration-count: infinite;
+
+}
+.marquee-2 img{
+ 
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px; /* Adjust the spacing between images */
+ 
+}
+
+@keyframes marquee-2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+
+}
+.box-marquee-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  width: 290px;
+  z-index: 10000;  
+   
+}
+
+.img-container3{
+  width: 100%;
+  display: flex;
+  height: 1300px;
+  background: linear-gradient(to bottom,#0D0C28, #5900b3);
+  position: absolute;
+  top:1973px;
+}
+.tablet{
+  display: flex;
+  position: absolute;
+  top:2100px;
+  right: 1px;
+  z-index: 10000;
+}
+.tabletholder{
+  display: flex;
+  position: absolute;
+  top:2760px;
+  right: 1px;
+}
+.web3 h1{
+display: flex;
+position: absolute;
+top:2100px;
+font-size: 54px;
+color: white;
+margin-left: 55px;
+}
+.web3 p{
+display: flex;
+position: absolute;
+top:2350px;
+font-size: 24px;
+color: white;
+margin-left: 55px;
+}
+
+.web3 button{
+  display: flex;
+  padding: 10px 20px;
+  background-color:transparent;
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  justify-content:space-between;
+  /* border-radius: 5px; */
+  border: 2px solid  rgb(34, 118, 245);
+  /* border-color: rgb(34, 118, 245); */
+  cursor: pointer;
+  box-shadow: none;
+  height: 50px;
+  width:150px;
+  font-size: 19px; 
+  border-width:3px ;
+  position: absolute;
+  top:2750px;
+  margin-left: 55px;
+}
+.sdk-container{
+  width: 100%;
+  display: flex;
+  height: 1300px;
+  background: linear-gradient(to left,#0D0C28, #5900b3);
+  position: absolute;
+  top:3173px;
+}
+.sdk{
+  display: flex;
+  position: absolute;
+  top:3173px;
+  margin-left: 200px;
+}
+
+.sdk-content h1{
+  display: flex;
+position: absolute;
+top:3300px;
+font-size: 54px;
+color: white;
+margin-left: 850px;
+}
+
+.sdk-content p{
+  display: flex;
+  justify-self: flex-start;
+position: absolute;
+top:3450px;
+font-size: 24px;
+color: white;
+margin-left: 850px;
+
 }
