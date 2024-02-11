@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../index.css';
 const ContactUs = () => {
   // Set the background color of the whole web page to violet-900
   document.body.style.background = "linear-gradient(to bottom, #0D0C28, #5900b3)";

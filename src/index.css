@@ -28,7 +28,8 @@ margin: 0;
    bottom: 0; 
    right: 0;
    color: white;
-   font-size: 24px; 
+   font-size: 27px;
+   font-family: sans-serif; 
    
 }
 
@@ -37,11 +38,12 @@ margin: 0;
   margin-bottom: 10px;
 }
 .content p{
-  font-family: var(--font-basic);
-    color: rgb(255, 255, 255);
+     font-family: sans-serif;
+    color: rgb(175, 172, 172);
     position: absolute;
     padding-top: 300px;
     font-style:bold;
+    font-size: 18px;
 }
 
 .content p img{
@@ -62,8 +64,10 @@ margin: 0;
   right: 350px;
   bottom: 0; 
   color: white;
-  font-size: 20px; 
-  font-family: 'Roboto Mono', monospace;
+  font-size: 24px; 
+  font-family: sans-serif;
+
+  /* font-family: 'Roboto Mono', monospace; */
 }
 
 .buttonContainer {
@@ -74,7 +78,7 @@ margin: 0;
   gap: 10px; 
   top: 0; 
   right: 510px;
-  padding-top: 430px;
+  padding-top: 450px;
  
  
 }
@@ -136,7 +140,9 @@ margin: 0;
  
 }
 .trust p{
-  
+  color: rgb(175, 172, 172);
+  font-family: sans-serif;
+  font-size: 18px;
   width: 190px;
   z-index: 10000;
 } 
@@ -281,11 +287,11 @@ width: 100%;
    color: white;
    font-size: 44px;
    margin-left: 70px;
-   font-family:'Poppins';
+   font-family: sans-serif;
 }
 .ai-shopping h2{
   margin-left: -70px;
-  font-family:'Poppins';
+  font-family: sans-serif;
 }
 .button3{
   position :relative;
@@ -317,83 +323,99 @@ width: 100%;
   display: flex;
   position: absolute;
   color:white;
+  font-family: sans-serif;
   font-size: 25px;
   top:260px
-}
-.marquee-2-contaier{
-  position:absolute;
-  width:100%;
-  top: 1860px;
-  border: 2px solid rgb(88, 82, 82); /* Adjust the border width and color as needed */
-  height: 110px;
-  justify-content: center; /* Corrected property name */
-  /* Corrected property name */
-  align-items: center; /* Align content vertically center */
+  
 }
 
-.kyc2{
-  justify-content: center;
-  align-items: center;
-  margin-top: 45px;
+.container2{
   
- 
-}
-.kyc2 p{
-  height: 60px;
-  margin-left: 40px;
-  margin-top: 25px;
-  position:absolute;
-  color:white ;
-  font-size: 24px;
-  justify-content: center;
+  position: absolute;
+  display: flex;
   align-items: center;
+   left: 0;
+   bottom: 0; 
+   right: 0;
+   color: white;
+   font-size: 24px; 
+   border-color:white; 
+
+}
+
+.KYC{
+  
+  width: 190px;
+  z-index: 10000;
+  margin-left: 40px;
  
 }
-.marquee-2{
+.KYC p{
+  color: rgb(175, 172, 172);
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 190px;
+  z-index: 10000;
+} 
+
+.marquee2 {
+
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 5s linear infinite; /* Adjust duration as needed */
+  animation: marquee 35s linear infinite; /* Adjust duration as needed */
   left: 100px;
   padding-left: 500px;
   position: relative;
-  margin-top: -30px;
+  margin-top: -10px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  animation-iteration-count: infinite;
-
+  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
 }
-.marquee-2 img{
- 
+
+
+.marquee2 img {
   margin-top: 20px;
   justify-content: center;
   align-items: center;
   margin-right: 50px; /* Adjust the spacing between images */
- 
+  z-index: 1;
 }
 
-@keyframes marquee-2 {
+@keyframes marquee2 {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 
 }
-.box-marquee-2{
-  position: relative;
-  align-items: center;
+
+.box-marque2{
   justify-content: center;
-  background-color: aqua;
-  width: 290px;
-  z-index: 10000;  
-   
+  overflow: hidden;
+  width:100%;
+  align-items: center;
+  z-index: 10000; 
+}
+
+.marquee2-container {
+  width: 100%;
+  display: flex;
+  border: 2px solid rgb(88, 82, 82); /* Adjust the border width and color as needed */
+  height: 110px;
+  position: relative;
+  justify-content: center; /* Corrected property name */
+  top: 1135px;
+  justify-content: center; /* Corrected property name */
+  align-items: center; /* Align content vertically center */
+  z-index: 10003;
 }
 
 .img-container3{
   width: 100%;
   display: flex;
-  height: 1300px;
+  height: 1500px;
   background: linear-gradient(to bottom,#0D0C28, #5900b3);
   position: absolute;
-  top:1973px;
+  top:1875px;
 }
 .tablet{
   display: flex;
@@ -407,18 +429,21 @@ width: 100%;
   position: absolute;
   top:2760px;
   right: 1px;
+  
 }
 .web3 h1{
 display: flex;
 position: absolute;
 top:2100px;
 font-size: 54px;
+font-family: sans-serif;
 color: white;
 margin-left: 55px;
 }
 .web3 p{
 display: flex;
 position: absolute;
+font-family: sans-serif;
 top:2350px;
 font-size: 24px;
 color: white;
@@ -463,6 +488,7 @@ margin-left: 55px;
 .sdk-content h1{
   display: flex;
 position: absolute;
+font-family: sans-serif;
 top:3300px;
 font-size: 54px;
 color: white;
@@ -470,6 +496,7 @@ margin-left: 850px;
 }
 
 .sdk-content p{
+  font-family: sans-serif;
   display: flex;
   justify-self: flex-start;
 position: absolute;
@@ -477,5 +504,94 @@ top:3450px;
 font-size: 24px;
 color: white;
 margin-left: 850px;
+
+}
+
+.footer-container{
+  width: 100%;
+  position:absolute;
+  background-color:#0B0E16;
+  height: 500px;
+  top: 3800px;
+}
+.footer-content img{
+  font-family: sans-serif;
+  position: absolute;
+  margin-left: 135px;
+  color: white;
+  margin-top: 90px;
+}
+
+.footer-content p{
+  font-family: sans-serif;
+  position: absolute;
+  margin-left: 125px;
+  color: white;
+  margin-top: 150px;
+  font-size: 24px;
+}
+.footer-list{
+  height: 450px;
+  width: 270px;
+  margin-top: 40px;
+  margin-left: 725px;
+}
+
+.footer-list h1{
+  font-size: 34px;
+  color: white;
+  font-family: sans-serif;
+}
+.footer-list li{
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+  height: 40px;
+}
+
+
+.footer-list1{
+  height: 450px;
+  width: 270px;
+ 
+  margin-top:-445px;
+  margin-left: 1105px;
+}
+
+.footer-list1 h1{
+  font-size: 34px;
+  color: white;
+  font-family: sans-serif;
+}
+.footer-list1 li{
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+  height: 40px;
+}
+
+.footer-list2{
+  height: 450px;
+  width: 270px;
+
+  margin-top:-445px;
+  margin-left: 1425px;
+}
+
+.footer-list2 h1{
+  font-size: 34px;
+  color: white;
+  font-family: sans-serif;
+}
+.footer-list2 li{
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+  height: 40px;
+}
+
+.footer-list li .icon{
+  margin-right: 10px;
+  
 
 }
