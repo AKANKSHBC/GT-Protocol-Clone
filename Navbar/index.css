@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-arial
+{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  .animate-bounce-slow {
+    animation: bounce 2s ease-in-out infinite;
+  }
+  .rotate-image {
+/* Rotate the image */
+transform: rotate(45deg);
+}
+
+.animate-bounce-slow-left {
+animation: bounceleft 2s ease-in-out infinite;
+}
+
+@keyframes bounceleft {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-5px);
+}
+}
+
+  
+
+
+.timer-decor-3 {
+width: 52px;
+position: absolute;
+bottom: 85%;
+right: 140px;
+z-index: 0.5;
+animation-delay: 4s;
+animation: coinAnim 6s ease-in-out infinite;
+}
+
+@keyframes coinAnim {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-10px);
+}
+}
+
+.bracket-hover::before,
+.bracket-hover::after {
+content: '';
+border: 1px solid transparent; /* Transparent border by default */
+transition: border-color 0.1s linear; /* Smooth transition */
+display: inline-block;
+width: 6px; /* Width of the bracket */
+height: 16px; /* Height of the bracket */
+border-radius: 2px;
+/* Rounded corners */
+}
+
+.bracket-hover::before {
+border-top-color: #ffffff; /* Top border for opening bracket */
+border-bottom-color: #ffffff; /* Bottom border for opening bracket */
+opacity: 0; /* Initially hidden */
+/* Add padding to the bottom for opening bracket */
+}
+
+.bracket-hover::after {
+border-top-color: #ffffff; /* Top border for closing bracket */
+border-bottom-color: #ffffff; /* Bottom border for closing bracket */
+opacity: 0; /* Initially hidden */
+/* Add padding to the bottom for closing bracket */
+}
+
+.bracket-hover:hover::before {
+border-left-color: #ffffff; /* Left border for opening bracket on hover */
+opacity: 1; /* Make bracket visible on hover */
+/* Add padding to the right for opening bracket on hover */
+}
+
+.bracket-hover:hover::after {
+border-right-color: #ffffff; /* Right border for closing bracket on hover */
+opacity: 1; /* Make bracket visible on hover */
+/* Add padding to the left for closing bracket on hover */
+}
+
+
+
+
